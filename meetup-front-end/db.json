@@ -1,0 +1,44 @@
+{
+  "attendees": [
+    {
+      "id": 1,
+      "firstName": "Malcom",
+      "lastName": "Reynolds",
+      "email": "captain@serenity.com",
+      "shirt": "L",
+      "skillLevel": "expert"
+    },
+    {
+      "id": 2,
+      "firstName": "Zoe",
+      "lastName": "Washburn",
+      "email": "zoew@gmail.com",
+      "shirt": "S",
+      "skillLevel": "intermediate"
+    },
+    {
+      "id": 3,
+      "firstName": "Hoban",
+      "lastName": "Washburn",
+      "email": "itswash@gmail.com",
+      "shirt": "M",
+      "skillLevel": "beginner"
+    },
+    {
+      "id": 4,
+      "firstName": "Jayne",
+      "lastName": "Cobb",
+      "email": "jayne@jaynestown.org",
+      "shirt": "L",
+      "skillLevel": "beginner"
+    },
+    {
+      "id": 5,
+      "firstName": "Kaylee",
+      "lastName": "Frye",
+      "email": "kaylee@serenity.com",
+      "shirt": "S",
+      "skillLevel": "expert"
+    }
+  ]
+}
