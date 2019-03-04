@@ -76,3 +76,16 @@ button:hover {
   background:#2a79a7;
   border: 2px solid #2a79a7;
 }
+
+.popup_inner {
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 25%;
+  bottom: 25%;
+  margin: auto;
+  background: white;
+  border: #0A2463 1px;
+  border-radius: 4px;
+  border-style: inset;
+}

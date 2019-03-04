@@ -1,24 +1,25 @@
 import React from 'react';
 
-const Registration = (props) => {
-  const { formData, formUpdater, formSend } = props;
+const Popup = (props) => {
+  const { edit, closePop, editorUpdater, idSelected } = props;
   return (
-    <div className="attendee-form">
-      <h2>Register Attendee</h2>
-      <form>
+    <div >
+      <div className='popup_inner'>
+        <h1>Hi</h1>
+        <form>
         <label> First Name:
-          <input id="firstName" type="text" onChange={formUpdater} />
+          <input id="firstName" type="text" onChange={editorUpdater} defaultValue={idSelected.firstName} />
         </label>
         <label> Last Name:
-          <input id="lastName" type="text" onChange={formUpdater} />
+          <input id="lastName" type="text" onChange={editorUpdater} defaultValue={idSelected.lastName}/>
         </label>
         <label> email
-          <input id="email" type="text" onChange={formUpdater} />
+          <input id="email" type="text" onChange={editorUpdater} defaultValue={idSelected.email}/>
         </label>
         <label>
           Shirt Size:
           <br />
-          <select id="shirt" onChange={formUpdater} > 
+          <select id="shirt" onChange={editorUpdater} defaultValue={idSelected.shirt}> 
             <option value=""></option>
             <option value="XS">XS</option>
             <option value="S">S</option>
@@ -32,7 +33,7 @@ const Registration = (props) => {
         <label>
           Experience Level: 
           <br />
-          <select id="skillLevel" onChange={formUpdater} > 
+          <select id="skillLevel" onChange={editorUpdater} defaultValue={idSelected.skillLevel}> 
             <option value=""></option>
             <option value="Beginner">Beginner</option>
             <option value="Intermediate">Intermediate</option>
@@ -41,10 +42,13 @@ const Registration = (props) => {
           <br />
         </label>
       </form>
-      <button onClick={formSend} >REGISTER</button>
+
+        <button onClick={edit}>save</button>
+        <button onClick={closePop}>closePop</button>      
+      </div>
     </div>
   );
 }
 
-export default Registration;
+export default Popup;
 
